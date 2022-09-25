@@ -60,7 +60,7 @@ class Bear {
         const rightEyeX = this.x + this.width / 6;
         const eyeY = this.y - this.width / 8;
         const eyeWidth = this.width / 6;
-        const eyeHeight = (this.isBlinking == true) ? 1 : this.width / 6;
+        const eyeHeight = (this.isBlinking == true) ? this.width / 60 : this.width / 6;
 
         // ear variables:
         const leftEarX = this.x - this.width / 2.5;

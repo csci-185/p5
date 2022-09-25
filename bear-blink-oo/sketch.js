@@ -39,7 +39,8 @@ function draw() {
     // frameRate(4);
     clear();
     // console.log(creatures);
-    for (const creature of creatures) {
+    for (let i = creatures.length - 1; i >= 0; i--) {
+        const creature = creatures[i];
         creature.moveRight(canvasWidth);
         creature.blink();
         creature.draw();
