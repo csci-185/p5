@@ -49,7 +49,7 @@ function draw() {
         }
         // close your eyes:
         if (x % prime == 0) {
-            console.log('on:', x, ":", prime);
+            // console.log('on:', x, ":", prime);
             creatures[i] = [x, y, size, c1, c2, speed, true, closeCount];
         } else if (blink) {
             // open your eyes if they've been closed for 5 cycles:
@@ -60,7 +60,7 @@ function draw() {
                 creatures[i] = [x, y, size, c1, c2, speed, true, closeCount];
             }
         } else {
-            console.log('continuing:', x);
+            // console.log('continuing:', x);
             creatures[i] = [x, y, size, c1, c2, speed, blink, closeCount];
         }
         makeCreature(x, y, size, c1, c2, blink, closeCount);
